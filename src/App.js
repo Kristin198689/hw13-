@@ -1,12 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import Filter from "./components/Filter";
+import UserList from "./components/UserList";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    <div className={styles.appContainer}>
+      <h1>Фильтрация пользователей</h1>
+      <Filter />
+      <UserList />
     </div>
   );
 }
